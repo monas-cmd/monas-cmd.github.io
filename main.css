@@ -3,31 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Times New Roman", Times, serif;
-  }
-  html {
-    scroll-snap-type: y;
-  }
-  section {
-    scroll-snap-align: start;
-    min-block-size: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  body{
-    
-    min-height: 100vh;
-    background: #cbccb8;
     
   }
+ 
+  
 
-  .main {
-  scroll-snap-align: start;
-  min-block-size: 100vh;
-  margin-left: 25%;
-  margin-right: 0;
-}
 
+ 
 p {
   font-size: 20px;
 }
@@ -35,8 +17,7 @@ p {
 
 
 body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
+  background-color: #d9d9db;
   font-size: 4rem;
 }
   
@@ -48,75 +29,45 @@ body {
     top: 0;
     left: 0;
     background-color: #39447A;
-    overflow-x: hidden;
-    padding-top: 20px;
+    
+    
    
   }
   .elements {
-      margin-top: 50%;
-      margin-left: 75px;
+      margin-top: 57%;
+      margin-left: 25%;
   }
  
  
 
-  .project {
-    
-    min-height: 100vh;
-    background: #83a8b1;
-    align-items: center;
-    margin: 0 auto;
-   
-    
   
+  
+  .fa-telegram:hover {
+    color: #31A4D7;
+  }
+  .fa-youtube:hover {
+    color: #FF0000;
+  }
+  .fa-external-link:hover {
+    color: #0000ff;
+  }
+  .fa-twitter:hover {
+    color: #1DA1F2;
+  }
+  .fa-github:hover {
+    color: #ffffff;
+  }
 
-  }
-  .parent {
-    display: flex;
-    align-items: center;
-    background: #83a8b1;
-  }
-
-  .child {
-    position: relative;
-    font-family: arial;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
-    height: 250px;
-    background: #A48EBB;
-    border-radius: 9px;
-    max-width: 31%;
-    min-height: 40vh;
-    width: 31%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .child p {
-    position: absolute;
-    bottom: 58%;
-    text-align: center;
-    
-
-  }
-  div.links {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    margin-left:46%;
-  }
-  div.tech {
-    position: absolute;
-    bottom: 50px;
-    text-align: center;
-    margin-left:41%;
-  }
+  
+  
+  
   .about {
     display: flex;
-    min-height: 100vh;
-    background: #e7e7eb;
+    margin-bottom: 70px;
+    background: #d9d9db;
     padding-left: 10px;
     padding-top: 19%;
+   
     
 
   }
@@ -124,22 +75,28 @@ body {
   .contact {
     text-align: center;
     min-height: 100vh;
-    background: #535461;
+    background: #d9d9db;
     padding-left: 10px;
     padding-top: 19%;
 
   }
-  
-  
-   .topic {
-    border-bottom: 2px;
+  .step {
+    text-align: center;
+    
+    background: #d9d9db;
+    padding-left: 10px;
+    padding-top: 10%;
+    z-index: -1;
 
   }
+  
+  
+   
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 22px;
+    color: #e9e0e0;
     display: block;
   }
   
@@ -155,20 +112,17 @@ body {
   }
 
   .contact a {
-    color: white;
+    color: #535461;
   }
   .contact p {
-    color: white;
+    color: #535461;
   }
   .contact h2 {
-    color: white;
+    color: #535461;
   }
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+ 
 
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 750px) {
     .sidenav {
         display: none;
     }
@@ -176,20 +130,185 @@ body {
       margin-left: 0; 
 }
 
-.parent {
-  display: block;
-}
 
-.child {
-  
-  max-width: 82%;
- 
-  width: 100%;
-
-}
 .about {
   display: block;
-  width: 100%;
+ 
 }
 
+}
+
+
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+
+
+
+ 
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #39447A;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+ 
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+button {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 35px;
+  cursor: pointer;
+  color: rgb(15, 2, 2);
+  padding: 1px;
+  background-color: transparent;
+  border: none;
+  
+  
+  
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media only screen and (min-width: 750px) {
+  #navbar{
+    display: none;
+  }
+ 
+}
+@media only screen and (min-width: 868px) {
+  #navbar{
+    display: none;
+  }
+  
+  
+} 
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  
+}
+
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+height: auto;
+
+max-width: 100%;
+vertical-align: middle;
+}
+
+
+
+.cards {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.cards_item {
+display: flex;
+padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+.cards_item {
+  width: 50%;
+}
+}
+
+@media (min-width: 56rem) {
+.cards_item {
+  width: 33.3333%;
+}
+}
+
+.card {
+background-color: white;
+border-radius: 0.55rem;
+box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+
+.card_content {
+padding: 1rem;
+background: linear-gradient(to bottom left, #A48EBB 40%, #39447A 100%);
+}
+
+.card_title {
+color: #ffffff;
+font-size: 1.4rem;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: capitalize;
+margin: 0px;
+}
+
+.card_text {
+color: #ffffff;
+font-size: 1.0rem;
+line-height: 1.5;
+margin-bottom: 1.25rem;    
+font-weight: 500;
+}
+.tech {
+  text-align: center;
+}
+.links {
+  text-align: center;
 }
