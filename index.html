@@ -1,211 +1,240 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-        <title>Welcome to My Portfolio</title>
-        <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Nasir - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    
-    <link rel="icon" 
-    type="image/png" 
-    href="favicon.png">  </head>
-    <body >
-      <script>
-        function openNav() {
-          document.getElementById("mySidebar").style.width = "50%";
-          document.getElementById("main").style.marginLeft = "50%";
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            background-image: url('mesh.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
-        
-        function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-        </script>
-        <div id="mySidebar" class="sidebar">
-          
-          <button class="openbtn" onclick="closeNav()">×</button>
-          <div class='elements'>
-            <div> <a href="#about" onclick="closeNav()"><i style='color:#C68642;'class="fa fa-user" aria-hidden="true"></i>&nbsp; About me</a> <br> </div>
-            <div> <a href="#projects" onclick="closeNav()"><i style='color:#C68642;' class="fa fa-ship" aria-hidden="true"></i>&nbsp;Projects</a><br> </div>
-            <div> <a href="#contact" onclick="closeNav()"><i style='color:#C68642;'  class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a><br> </div>
-        </div>
-        </div>
-      
-        <div class="sidenav">
-            <div class='elements'>
-            <div> <a href="#about"><i style='color:#C68642;'class="fa fa-user" aria-hidden="true"></i>&nbsp; About me</a> <br> </div>
-            <div> <a href="#projects"><i style='color:#C68642;' class="fa fa-ship" aria-hidden="true"></i>&nbsp;Projects</a><br> </div>
-            <div> <a href="#contact"><i style='color:#C68642;'  class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a><br> </div>
-        </div>
-            
-          </div>
-          <div class="step" id="navbar"><div id="navbar">
-            <img src="favicon.png" width="45" height="45" style="float: left; margin-top: 10px;"/>
-            <button class="openbtn" onclick="openNav()">☰</button>
-          </div></div>
-          
-            
-          
-          <div class="main" >
-            
-            <div class="about" id="about" style="background-image: url('mesh.svg');" >
-              
-              <diV>
-                <p style="font-size: 33px;"><b>Hello there 👋 </b></p>
-            <br>
-              <p>My names is Mohammed Nasir  a problem solver with interests in AI and ML. </p>
-              <br>
-              <p>This is a porfolio that I built  to show case my skills in full stack machine learning app development</p>
-              <br>
-             <p>You can find some of the projects that I have worked on below ranging from Computer Vision to Natural Language Processing apps</p> 
-             <br>
-             <p>Feel free to contact for any kind of inquiries, I have my contacts listed at the end of this page.</p>
-             <br>
-            <p>Thanks for passing by! 😊</p>
-            </diV>
-             <div>
-               <img src="banner.svg" width="100%"/>
-             </div>
-            </div> </div>
-            <div class="main" id="projects" style="background-image: url('mesh.svg');">
-            
-              <ul class="cards">
-                <li class="cards_item">
-                  <div class="card">
-                    <div class="card_image"><img src="transfered.png"></div>
-                    <div class="card_content">
-                      <h2 class="card_title">Style transfer</h2>
-                      <p class="card_text">In this project I utilized a pre-trained style transfer tensorflow model and converted it in to a web app using Flask In this project I utilized a pre-trained style transfer tensorflow model and converted it in to a web app using Flask</p>
-                      <div class="tech"> 
-                        <span class="iconify" data-icon="vscode-icons:file-type-python" data-inline="false"></span>
-                        <span class="iconify" data-icon="logos-tensorflow" data-inline="false"></span>
-                        <span class="iconify" data-icon="logos:flask" data-inline="false"></span>
-                        <span class="iconify" data-icon="logos:html-5" data-inline="false"></span>
-                        
-                        </div>
-                      <div class="links"><i class="fa fa-external-link" aria-hidden="true"></i>
-                        
-                        <a href="https://github.com/monas-cmd/style-transfer"><span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span></a>
-                        <a href="https://www.youtube.com/watch?v=kx9IBvjEXGo"><i class="fa fa-youtube" aria-hidden="true"></i> </a></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="cards_item">
-                  <div class="card">
-                    <div class="card_image"><img src="segmented.png"></div>
-                    <div class="card_content">
-                      <h2 class="card_title">Image Super Resolution</h2>
-                      <p class="card_text">Demo of Image segmentation pixel perfect pure CSS simple responsive card grid layout Demo of pixel perfect pure CSS simple responsive card grid layout Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                      <div class="tech"> 
-                        <span class="iconify" data-icon="vscode-icons:file-type-python" data-inline="false"></span>
-                        <span class="iconify" data-icon="logos-tensorflow" data-inline="false"></span>
-                        <span class="iconify" data-icon="logos:flask" data-inline="false"></span>
-                        <span class="iconify" data-icon="logos:html-5" data-inline="false"></span>
-                        
-                        </div>
-                      <div class="links">
-                        <span class="iconify" data-icon="vaadin:youtube" data-inline="false"></span>
-                        <span class="iconify" data-icon="akar-icons:link-chain" data-inline="false"></span>
-                        <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span>
-                        <span class="iconify" data-icon="simple-icons:googlecolab" data-inline="false"></span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="cards_item">
-                  <div class="card">
-                    <div class="card_image"><img src="abe.png"></div>
-                    <div class="card_content">
-                      <h2 class="card_title">Image Colorization</h2>
-                      <p class="card_text"> Autoencoders can be utilized Autoencoders can be utilized in various scenarios one of them being gray scale image to RGB conversion. Just upload a gray scale image and the model predicts what it migth look like in RGB space. </p>
-                    </p>
-                    <div class="tech"> 
-                      <span class="iconify" data-icon="vscode-icons:file-type-python" data-inline="false"></span>
-                      <span class="iconify" data-icon="logos-tensorflow" data-inline="false"></span>
-                      <span class="iconify" data-icon="logos:flask" data-inline="false"></span>
-                      <span class="iconify" data-icon="logos:html-5" data-inline="false"></span>
-                      
-                      </div>
-                    <div class="links"><i class="fa fa-external-link" aria-hidden="true"></i>
-                      <a href="https://github.com/monas-cmd/image-colorization"></a><i class="fa fa-github" aria-hidden="true"></i></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="cards_item">
-                  <div class="card">
-                    <div class="card_image"><img src="lena.png"></div>
-                    <div class="card_content">
-                      <h2 class="card_title">Face tattoo remover</h2>
-                      <p class="card_text">Another application Another applicationAnother application of Autoencoders. Another application of Autoencoders.Another application of Autoencoders. It was trained in unsupervised manner with images without noise and its task is to reconstruct an unseen noisy image. </p>
-                    </p>
-                    <div class="tech"> 
-                      <span class="iconify" data-icon="vscode-icons:file-type-python" data-inline="false"></span>
-                      <span class="iconify" data-icon="logos-tensorflow" data-inline="false"></span>
-                      <span class="iconify" data-icon="logos:flask" data-inline="false"></span>
-                      <span class="iconify" data-icon="logos:html-5" data-inline="false"></span>
-                      
-                      </div>
-                    <div class="links"><i class="fa fa-external-link" aria-hidden="true"></i>
-                      <a href="https://github.com/monas-cmd/face-tattoo-remover"></a></a><i class="fa fa-github" aria-hidden="true"></i></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="cards_item">
-                  <div class="card">
-                    <div class="card_image"><img src="amhdata.png" width="500px" height="300px"></div>
-                    <div class="card_content">
-                      <h2 class="card_title">Amharic Sentiment Dataset</h2>
-                      <p class="card_text">Having a digitally low resource language 
-                        as a native tongue, teau everything everything everythingeverything  Having a digitally low resource language 
-                        as a native tongue, teaches you everything 
-                         curation, and  data preprocessing. This dataset contains 10,000 texts with labels. 10,000 texts with labels. </p>
-                         <div class="tech"> 
-                          <span class="iconify" data-icon="vscode-icons:file-type-python" data-inline="false"></span>
-                          <span class="iconify" data-icon="logos-tensorflow" data-inline="false"></span>
-                          <span class="iconify" data-icon="logos:flask" data-inline="false"></span>
-                          <span class="iconify" data-icon="logos:html-5" data-inline="false"></span>
-                          
-                          </div>
-                         
-                        <div class="links"><i class="fa fa-external-link" aria-hidden="true"></i>
-                          <a href="https://github.com/monas-cmd/amharic-sentiment-dataset"><i class="fa fa-github" aria-hidden="true"></i></a></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="cards_item">
-                  <div class="card">
-                    <div class="card_image"><img src="sentiment.png"></div>
-                    <div class="card_content">
-                      <h2 class="card_title">Amharic Sentiment Analysis</h2>
-                      <p class="card_text">I utilized the dataset I utilized the datasetI utilized the datasetI utilized the datasetI utilized the datasetI utilized the datasetI utilized the datasetI utilized the dataset I curated to train a model using Naive-Bayes classifeir and used flask to deploy it as a web app.</p>
-                      <div class="tech"> 
-                        <span class="iconify" data-icon="vscode-icons:file-type-python" data-inline="false"></span>
-                        <span class="iconify" data-icon="logos-tensorflow" data-inline="false"></span>
-                        <span class="iconify" data-icon="logos:flask" data-inline="false"></span>
-                        <span class="iconify" data-icon="logos:html-5" data-inline="false"></span>
-                        
-                        </div>
-                      <div class="links"><i class="fa fa-external-link" aria-hidden="true"></i>
-                        <a href="https://github.com/monas-cmd/amharic-sentiment-analysis"> <i class="fa fa-github" aria-hidden="true"></i></a></div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Sidebar for Mobile -->
+    <div id="mySidebar" class="fixed h-full w-0 bg-blue-900 overflow-x-hidden transition-all duration-500 z-50">
+        <button class="closebtn text-white text-3xl absolute top-4 right-6" onclick="closeNav()">×</button>
+        <div class="mt-20 px-6">
+            <div class="mb-4">
+                <a href="#about" onclick="closeNav()" class="text-white text-lg hover:text-blue-300 transition-colors">
+                    <i class="fa fa-user mr-2"></i>About Me
+                </a>
             </div>
-            
-          <div class="main">
-          <div class="contact" id = "contact" style="background-image: url('mesh.svg');">
-            <h2> contact me</h2> <br>
-            <a href = "mailto: monassir@outlook.com"><p id="email"> monassir@outlook.com</p><br></a>
-            <br>
-            <a href="https://twitter.com/mohaminn_"><i  class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com/channel/UC6T8F-yOPggjQDe--0Ge7tQ"><i class="fa fa-youtube"  aria-hidden="true"></i></a>
-            <a href="https://telegram.com/monasir2"><i class="fa fa-telegram"  aria-hidden="true"></i></a>
-          </div>
-          
+            <div class="mb-4">
+                <a href="#projects" onclick="closeNav()" class="text-white text-lg hover:text-blue-300 transition-colors">
+                    <i class="fa fa-ship mr-2"></i>Projects
+                </a>
+            </div>
+            <div>
+                <a href="#contact" onclick="closeNav()" class="text-white text-lg hover:text-blue-300 transition-colors">
+                    <i class="fa fa-envelope mr-2"></i>Contact
+                </a>
+            </div>
         </div>
-          
-    </body>
+    </div>
+
+    <!-- Navbar -->
+    <div class="fixed w-full bg-white shadow-md z-40">
+        <div class="container mx-auto flex justify-between items-center p-4 max-w-7xl">
+            <img src="favicon.png" alt="Logo" class="w-12 h-12">
+            <button class="openbtn text-3xl text-gray-800" onclick="openNav()">☰</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="pt-20">
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-4 py-12 max-w-4xl">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-1">
+                    <h1 class="text-4xl font-bold mb-6">Hello there 👋</h1>
+                    <p class="text-lg mb-4">My name is <strong>Mohammed Nasir</strong>, a problem solver with interests in AI and ML.</p>
+                    <p class="text-lg mb-4">This is a portfolio that I built to showcase my skills in full-stack machine learning app development.</p>
+                    <p class="text-lg mb-4">You can find some of the projects that I have worked on below, ranging from Computer Vision to Natural Language Processing apps.</p>
+                    <p class="text-lg mb-4">Feel free to contact me for any inquiries. My contacts are listed at the end of this page.</p>
+                    <p class="text-lg">Thanks for passing by! 😊</p>
+                </div>
+                <div class="flex-1">
+                    <img src="banner.svg" alt="Banner" class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-blue-50 py-12">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Style Transfer -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="transfered.png" alt="Style Transfer" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-gradient-to-br from-purple-600 to-blue-600">
+                            <h3 class="text-xl font-bold text-white mb-2">Style Transfer</h3>
+                            <p class="text-gray-200 mb-4">In this project, I utilized a pre-trained style transfer TensorFlow model and converted it into a web app using Flask.</p>
+                            <div class="flex justify-center gap-4 mb-4">
+                                <span class="iconify text-white text-2xl" data-icon="vscode-icons:file-type-python"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos-tensorflow"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:flask"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:html-5"></span>
+                            </div>
+                            <div class="flex justify-center gap-4">
+                                <a href="https://github.com/monas-cmd/style-transfer" class="text-white hover:text-blue-300">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=kx9IBvjEXGo" class="text-white hover:text-blue-300">
+                                    <i class="fab fa-youtube text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Super Resolution -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="segmented.png" alt="Image Super Resolution" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-gradient-to-br from-purple-600 to-blue-600">
+                            <h3 class="text-xl font-bold text-white mb-2">Image Super Resolution</h3>
+                            <p class="text-gray-200 mb-4">Demo of pixel-perfect pure CSS simple responsive card grid layout.</p>
+                            <div class="flex justify-center gap-4 mb-4">
+                                <span class="iconify text-white text-2xl" data-icon="vscode-icons:file-type-python"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos-tensorflow"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:flask"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:html-5"></span>
+                            </div>
+                            <div class="flex justify-center gap-4">
+                                <a href="#" class="text-white hover:text-blue-300">
+                                    <i class="fab fa-youtube text-2xl"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-blue-300">
+                                    <i class="fas fa-link text-2xl"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-blue-300">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-blue-300">
+                                    <span class="iconify text-2xl" data-icon="simple-icons:googlecolab"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Colorization -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="abe.png" alt="Image Colorization" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-gradient-to-br from-purple-600 to-blue-600">
+                            <h3 class="text-xl font-bold text-white mb-2">Image Colorization</h3>
+                            <p class="text-gray-200 mb-4">Autoencoders can be utilized in various scenarios, one of them being grayscale image to RGB conversion.</p>
+                            <div class="flex justify-center gap-4 mb-4">
+                                <span class="iconify text-white text-2xl" data-icon="vscode-icons:file-type-python"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos-tensorflow"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:flask"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:html-5"></span>
+                            </div>
+                            <div class="flex justify-center gap-4">
+                                <a href="https://github.com/monas-cmd/image-colorization" class="text-white hover:text-blue-300">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Face Tattoo Remover -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="lena.png" alt="Face Tattoo Remover" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-gradient-to-br from-purple-600 to-blue-600">
+                            <h3 class="text-xl font-bold text-white mb-2">Face Tattoo Remover</h3>
+                            <p class="text-gray-200 mb-4">Another application of Autoencoders. It was trained in an unsupervised manner with images without noise and its task is to reconstruct an unseen noisy image.</p>
+                            <div class="flex justify-center gap-4 mb-4">
+                                <span class="iconify text-white text-2xl" data-icon="vscode-icons:file-type-python"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos-tensorflow"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:flask"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:html-5"></span>
+                            </div>
+                            <div class="flex justify-center gap-4">
+                                <a href="https://github.com/monas-cmd/face-tattoo-remover" class="text-white hover:text-blue-300">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amharic Sentiment Dataset -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="amhdata.png" alt="Amharic Sentiment Dataset" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-gradient-to-br from-purple-600 to-blue-600">
+                            <h3 class="text-xl font-bold text-white mb-2">Amharic Sentiment Dataset</h3>
+                            <p class="text-gray-200 mb-4">Having a digitally low-resource language as a native tongue teaches you everything about data curation and preprocessing. This dataset contains 10,000 texts with labels.</p>
+                            <div class="flex justify-center gap-4 mb-4">
+                                <span class="iconify text-white text-2xl" data-icon="vscode-icons:file-type-python"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos-tensorflow"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:flask"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:html-5"></span>
+                            </div>
+                            <div class="flex justify-center gap-4">
+                                <a href="https://github.com/monas-cmd/amharic-sentiment-dataset" class="text-white hover:text-blue-300">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amharic Sentiment Analysis -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="sentiment.png" alt="Amharic Sentiment Analysis" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-gradient-to-br from-purple-600 to-blue-600">
+                            <h3 class="text-xl font-bold text-white mb-2">Amharic Sentiment Analysis</h3>
+                            <p class="text-gray-200 mb-4">I utilized the dataset I curated to train a model using Naive-Bayes classifier and used Flask to deploy it as a web app.</p>
+                            <div class="flex justify-center gap-4 mb-4">
+                                <span class="iconify text-white text-2xl" data-icon="vscode-icons:file-type-python"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos-tensorflow"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:flask"></span>
+                                <span class="iconify text-white text-2xl" data-icon="logos:html-5"></span>
+                            </div>
+                            <div class="flex justify-center gap-4">
+                                <a href="https://github.com/monas-cmd/amharic-sentiment-analysis" class="text-white hover:text-blue-300">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-4 py-12 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+            <div class="text-center">
+                <a href="mailto:monassir@outlook.com" class="text-blue-600 hover:text-blue-800 text-lg">monassir@outlook.com</a>
+                <div class="flex justify-center gap-6 mt-4">
+                    <a href="https://twitter.com/mohaminn_" class="text-blue-600 hover:text-blue-800">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC6T8F-yOPggjQDe--0Ge7tQ" class="text-blue-600 hover:text-blue-800">
+                        <i class="fab fa-youtube text-2xl"></i>
+                    </a>
+                    <a href="https://telegram.com/monasir2" class="text-blue-600 hover:text-blue-800">
+                        <i class="fab fa-telegram text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</body>
 </html>
